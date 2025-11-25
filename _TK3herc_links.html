@@ -1,0 +1,561 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN" "html.dtd">
+<HTML>
+<HEAD>
+<TITLE>Turnkey #3, Hercules, MVS/380, VM/370 and VM/380</TITLE>
+<style type="text/css"> 
+A:hover {color: darkblue; background: gold; font-weight: bold}
+<!--<style fprolloverstyle>A:hover {color:blue; background:white}-->
+</style>
+<meta name="keywords" content=" Turnkey, Tur(n)key #3, Hercules,
+ MVS, MVS 3.8j, MVS380, VM, VM370, VM380" />
+<LINK REL=STYLESHEET TYPE="text/css" HREF="http://www.hercules-390.eu/hercules.css">
+<link rel="shortcut icon"            href="images/favicon.ico" />
+<link rel="icon"                     href="images/favicon.ico" />
+</HEAD>
+<BODY BGCOLOR="#ffffcc" TEXT="#000000" LINK="#0000A0"
+      VLINK="#008040" ALINK="#000000">
+
+<table><tr><td>
+
+<table width="300" align="right">
+  <tr>
+   <td></td>
+   <td width="256" align="right">
+     <A HREF="http://mvs380.sourceforge.net/">
+     <img vspace="10"
+      src="http://mvs380.sourceforge.net/mvs380.jpg"
+      alt="MVS/380 Project" width="256" height="256"></A>
+   </td>
+  </tr>
+</table>
+
+<h1><A NAME=doctop HREF="http://www.bsp-gmbh.com/turnkey/"><font size=5>Tur(n)key </font><font size=5>#3</font></A>, 
+    <A HREF=http://www.hercules-390.eu/><font size=5>Hercules</font></A>, 
+    <A HREF=#herc><font size=5>MVS</font><font size=4>/380</font></A>,
+    <A HREF=#vm370><font size=5>VM</font><font size=4>/370</font></A>,
+    <A HREF="http://mvs380.sourceforge.net/"><font size=5>VM</font><font size=4>/380</font></A>,
+    <A HREF=#doc><font size=4>DocLinks</font></A>
+</h1>
+
+<hr noshade>
+
+<h3>MVS/380 v1.2 &ndash; 2012-08-20 &ndash; <A HREF="http://mvs380.cvs.sourceforge.net/viewvc/mvs380/mvs380/mvs380_new_features.txt">New Features</A></h3>
+<ul>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;</A>
+    <A HREF="http://sourceforge.net/projects/mvs380/files/mvs380/MVS_380%201.2/Method%201%20-%20Overlay%20to%20TK3UPD/mvs380-1_2_overlay.zip/download">
+    MVS/380 v1.2</A> &ndash; MVS/380 Software <small>(24.3 MB)</small> &ndash; Overlay to <A HREF="http://tk3upd.4shared.com">tk3upd</A>
+    <small>(57.9 MB)</small> successor to Tur(n)key #3 (MVS 3.8j)
+    <small>(<A HREF=#mvs380>alt links</A>)</small>
+<br><small>-or-</small>
+<!--
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;</A>
+    <A HREF="http://content.wuala.com/contents/sccosel/mvs380/mvs380-1_2_rtr.zip">
+    MVS/380 v1.2</A> &ndash; MVS/380 Software <small>(77.4 MB)</small> &ndash; Full Install
+    <small>(<A HREF=#mvs380>alt links</A>)</small>
+-->
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;</A>
+    <A HREF="http://sourceforge.net/projects/mvs380/files/mvs380/MVS_380%201.2/Method%202%20-%20Full%20Install%20Package/mvs380-1_2_rtr.zip/download">
+    MVS/380 v1.2</A> &ndash; MVS/380 Software <small>(77.4 MB)</small> &ndash; Full Install
+    <small>(<A HREF=#mvs380>alt links</A>)</small>
+
+<p><small>Download only if needed:</small>
+
+<!--
+<li><A HREF="http://www.ibiblio.org/jmaynard/turnkey-mvs-3.zip">Tur(n)key #3 CD Image</A>
+    &ndash; Original August 2002 Distribution - Contains missing DASD <small>(488 MB)</small>
+    <small>(<A HREF=http://www.jaymoseley.com/hercules/download/zips/turnkey-mvs-3.zip>alt link</A>)</small>
+-->
+<li><A HREF="http://www.ibiblio.org/jmaynard/turnkey-mvs-3.zip">Tur(n)key #3 CD Image</A>
+    &ndash; Original August 2002 Distribution - Contains missing DASD <small>(488 MB)</small>
+    <small>(<A HREF=http://www.jaymoseley.com/hercules/downloads/archives/turnkey-mvs-3.zip>alt link</A>)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;</A>
+    <A HREF="http://www.ibiblio.org/jmaynard/herc307/hercules-3.07-w32.zip">Hercules-3.07-w32.zip</A>
+    <small>(1.96 MB) plus </small>
+<A HREF="http://www.microsoft.com/download/en/details.aspx?id=26347">Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package ATL Security Update</A>
+    <small>(<A HREF=#hercEm>alt links</A>)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/sourceforge/mvs380/hercules380-3_07-4_0.zip">Hercules/380-3_07 v4.0</A>*
+    <small>(1.70 MB)
+    (<A HREF=#herc380>alt links</A>)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/project/x3270/x3270/3.3.12ga11/wc3270-3.3.12ga11-noinstall.zip">WC3270-3.3.12ga11-noinstall.zip</A>*
+    &ndash; 3270 Terminal Emulator <small>(3.22 MB)
+   (<A HREF=#wc3270>alt links</A>)</small>
+<p>
+<b>*<small>Note:</b> You may have to click on "Download Now" or "direct link" 
+on the next screen to complete the download from Sourceforge.net.</small>
+</ul>
+<hr>
+
+<h3>MVS/380 v1.0</h3>
+
+<h3><A HREF="http://mvs380.sourceforge.net/s380diagram.html">Software Diagram</A>
+    <font size=2> &ndash; Overview of and links to all base Hercules, MVS and VM software freely available.</font>
+</h3>
+<h3><A HREF="http://tech.groups.yahoo.com/group/hercules-os380/files/TK3qstart_front_end.bat">TK3qstart</A>
+    <font size=2> &ndash; Automated Windows .bat script to automate the install of
+    <A HREF="http://tech.groups.yahoo.com/group/hercules-os380/files/TK3qstart-0_01c1.zip">TK3qstart v0.01c1</A>
+    which automates the installation of the following software:&nbsp;&nbsp;&nbsp;
+   (<A HREF="http://mvs380.cvs.sourceforge.net/viewvc/mvs380/mvs380/install/inst380.txt?pathrev=release-1_0">MVS/380 v1.0 - Manual installation instructions</A>)
+</font>
+</h3>
+<ul>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://www.ibiblio.org/jmaynard/turnkey-mvs-3.zip">Tur(n)key #3 CD Image</A>
+    &ndash; Original August 2002 Distribution <small>(488 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <a href="http://www.ibiblio.org/jmaynard/herc307/hercules-3.07-w32.msi">Hercules-3.07-w32.msi</a>
+    &ndash; Hercules Emulator - Windows 32-bit Installer package <small>(3.19 MB) 
+    (<A HREF=#hercEm>alt links</A>)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/sourceforge/mvs380/hercules380-3_07-3_0.zip">Hercules/380-3_07 v3.0</A>*
+    &ndash; Hercules S/380 Emulator Patch 
+    - Overlay to Hercules v3.07 <small>(1.69 MB)
+    (<A HREF=#herc380>alt links</A>)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/sourceforge/mvs380/mvs380-1_0.zip">MVS/380 v1.0</A>*
+    &ndash; MVS/380 Software - Overlay to Tur(n)key #3 (MVS 3.8j) <small>(1.60 MB)
+    (<A HREF=#mvs380>alt links</A>)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://mvs380.31bits.net/mvs380-1_0-shadow.zip">MVS380-1_0-shadow.zip</A>
+    &ndash; <small>Custom Built Installation Process Offering - MVS/380 Shadow Update (82.5 MB)
+    (<A HREF=#mvs380CBIPO>alt links</A>)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/project/x3270/x3270/3.3.12ga7/wc3270-3.3.12ga7-noinstall.zip">WC3270-3.3.12ga7-noinstall.zip</A>*
+<!--<A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>-->
+    &ndash; 3270 Terminal Emulator <small>(3.22 MB)
+   (<A HREF=#wc3270>alt links</A>)
+<!--<A HREF=#wc3270 style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:blue">&nbsp;current version&nbsp;</A>)-->
+    </small>
+<!--<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/project/x3270/x3270/3.3.11ga6/wc3270-3.3.11ga6-noinstall.zip">WC3270-3.3.11ga6-noinstall.zip</A>*-->
+<!--<li><A HREF="http://downloads.sourceforge.net/project/x3270/x3270/3.3.11ga6/wc3270-3.3.11ga6-noinstall.zip">WC3270-3.3.11ga6-noinstall.zip</A>*
+    - 3270 Terminal Emulator <small>(2.94 MB)</small>-->
+<!--<li><A HREF="http://sourceforge.net/projects/x3270/files/x3270/3.3.11ga6/wc3270-3.3.11ga6-noinstall.zip/download">WC3270-3.3.11ga6-noinstall.zip</A>*
+    - 3270 Terminal Emulator <small>(2.94 MB)</small>-->
+<p>
+<b>*<small>Note:</b> You may have to click on "Download Now" or "direct link" 
+on the next screen to complete the download from Sourceforge.net.</small>
+</ul>
+
+<!--
+<h3><A HREF="http://www.smrcc.org.uk/members/g4ugm/VM370.htm">VM/370</A> and <A HREF="http://mvs380.sourceforge.net/">VM/380</A> Software Links</h3>
+<ul>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;</A>
+    <A HREF="http://vm370.31bits.net/vm370sixpack-1_2.zip">VM/370sixpack v1.2</A>
+    &ndash; VM/370 Base System v1.2 - Jeff Sipek's site
+    <small>(117 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;</A>
+    <A HREF="http://vm370.31bits.net/vm370sixpack-1_1.zip">VM/370sixpack v1.1</A></b>
+    &ndash; VM/370 Base System v1.1 - Jeff Sipek's site
+    <small>(99.6 MB) (<A HREF=#vm370>alt links</A>) (<A HREF=#vm370 style="color:red">beta releases</A>)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/project/mvs380/vm380/VM_380%201.1/vm380-1_1.zip">VM/380 v1.1</A>*
+    &ndash; VM/380 Enhancements - overlay to VM/370 Base System v1.1
+    <small>(2.42 MB)</small>
+<p>
+<b>*<small>Note:</b> You may have to click on "Download Now" or "direct link" 
+on the next screen to complete the download from Sourceforge.net.</small>
+</ul>
+-->
+<hr>
+<center><A NAME=herc HREF=#doctop><font size=1>Back to Top</font></A></center>
+
+<h3>Links</h3>
+<ul>
+<li><a NAME=hercEm HREF="http://www.hercules-390.eu/">Hercules</a> Emulator:<p>
+<ul>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:green">&nbsp;new&nbsp;</A>
+    <a href="http://www.hercules-390.eu/">Hercules-3.11 Official</a>
+    &ndash; Hercules 3.11 Software - Official Site
+<li><a style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;beta&nbsp;</a>
+    <a href="http://www.smrcc.org.uk/members/g4ugm/snapshots/">Hercules-3.08.x Snapshots</a>
+    &ndash; Newest Hercules 3.08.x Interim Builds
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <a href="http://www.ibiblio.org/jmaynard/herc307/hercules-3.07-w32.msi">Hercules-3.07-w32.msi</a>
+    &ndash; Windows 32-bit Installer package
+    <small>(3.19 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://www.ibiblio.org/jmaynard/herc307/hercules-3.07-w32.zip">Hercules-3.07-w32.zip</A>
+    <small>(1.96 MB) plus </small>
+<!--<A HREF="http://download.microsoft.com/download/6/B/B/6BB661D6-A8AE-4819-B79F-236472F6070C/vcredist_x86.exe">Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package ATL Security Update</A>
+    <small>(2.61 MB)</small>-->
+<A HREF="http://www.microsoft.com/en-us/download/details.aspx?id=26347">Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package ATL Security Update</A>
+&ndash;
+(<A HREF="http://www.microsoft.com/en-us/download/details.aspx?id=14431">prev</A>)
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <a href="http://www.ibiblio.org/jmaynard/herc307/hercules-3.07-w32.zip">Hercules-3.07-w32.zip</a>
+    &ndash; 32-bit binaries only archive
+    <small>(1.96 MB)</small>
+<!--<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev</A>
+    <A HREF="http://www.hercules-390.org/hercules-3.06-native.zip">Hercules-3.06-native.zip</A>
+    &ndash; Base Hercules mainframe emulator v3.06
+    <small>(1.87 MB)</small>-->
+</ul>
+</ul>
+
+<ul>
+<li><a NAME=herc380 HREF="http://mvs380.sourceforge.net/">Hercules S/380</a> Emulator Patch:<p>
+<ul>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/sourceforge/mvs380/hercules380-3_07-4_0.zip">Hercules/380-3_07 v4.0</A>*
+    <small>(1.70 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/sourceforge/mvs380/hercules380-3_07-3_0.zip">Hercules/380-3_07 v3.0</A>*
+    <small>(1.70 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/sourceforge/mvs380/hercules380-3_07-2_0.zip">Hercules/380-3_07 v2.0</A>*
+    <small>(1.70 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/sourceforge/mvs380/hercules380-3_07-1_0.zip">Hercules/380-3_07 v1.0</A>*
+    <small>(1.73 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/sourceforge/mvs380/hercules380-3_06-7_0.zip">Hercules/380-3_06 v7.0</A>*
+    <small>(1.60 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/sourceforge/mvs380/hercules380-3_06-6_0.zip">Hercules/380-3_06 v6.0</A>*
+    <small>(1.61 MB)</small>
+<!--
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://vmdist.homelinux.org/hercules380.zip">Hercules/380-3_06 v6.0</A>
+    &ndash; Andy Norrie's site
+    <small>(1.61 MB)</small>-->
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://luminainfo.com.br/hercules/vmdist.homelinux.org/hercules380.zip">Hercules/380-3_06 v6.0</A>
+    &ndash; Mirror of Andy Norrie's site
+    <small>(1.61 MB)</small>
+<p>
+<b>*<small>Note:</b> You may have to click on "Download Now" or "direct link" 
+on the next screen to complete the download from Sourceforge.net.</small>
+</ul>
+</ul>
+<p>
+
+<ul>
+<li><a NAME=mvs380 HREF="http://mvs380.sourceforge.net/">MVS/380</a> Software:<p>
+<ul>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;</A>
+    <A HREF="http://sourceforge.net/projects/mvs380/files/mvs380/MVS_380%201.2a/Method%201%20-%20Overlay%20to%20TK4-/mvs380-1_2a_tk4-_v05_overlay.zip/download">
+    MVS/380 v1.2a</A> &ndash; MVS/380 Software <small>(74.0 MB)</small> &ndash; Overlay to <A HREF="http://sourceforge.net/projects/mvs380/files/mvs380/MVS_380%201.2a/Method%201%20-%20Overlay%20to%20TK4-/tk4-_v1.00_current-v05.zip/download">tk4-</A>
+    <small>(114 MB)</small> successor to Tur(n)key #3 (MVS 3.8j)
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;</A>
+    <A HREF="http://sourceforge.net/projects/mvs380/files/mvs380/MVS_380%201.2/Method%201%20-%20Overlay%20to%20TK3UPD/mvs380-1_2_overlay.zip/download">
+    MVS/380 v1.2</A> &ndash; MVS/380 Software <small>(24.3 MB)</small> &ndash; Overlay to <A HREF="http://vintagebigblue.org/MVSr3.8J/Downloads/tk3upd.zip">tk3upd</A>
+    <small>(57.9 MB)</small> successor to Tur(n)key #3 (MVS 3.8j)
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;</A>
+    <A HREF="http://sourceforge.net/projects/mvs380/files/mvs380/MVS_380%201.2/Method%202%20-%20Full%20Install%20Package/mvs380-1_2_rtr.zip/download">
+    MVS/380 v1.2</A> &ndash; MVS/380 Software <small>(77.4 MB)</small> &ndash; Full Install
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://sourceforge.net/projects/mvs380/files/mvs380/MVS_380%201.1/mvs380-1_1.zip/download">MVS/380 v1.1</A></b>
+    &ndash; MVS/380 Software <small>(2.60 MB) &ndash;</small> Overlay to Tur(n)key #3 (MVS 3.8j)
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/sourceforge/mvs380/mvs380-1_0.zip">MVS/380 v1.0</A></b>
+    &ndash; MVS/380 Software <small>(1.60 MB) &ndash;</small> Overlay to Tur(n)key #3 (MVS 3.8j)
+<!--(<A HREF=#mvs380>alt link</A>)</small>-->
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://luminainfo.com.br/hercules/vmdist.homelinux.org/mvs380.zip">MVS/380 v1.0</A>
+    &ndash; Mirror of Andy Norrie's site <small>(1.60 MB)</small>
+<!--
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://vmdist.homelinux.org/mvs380.zip">MVS/380 v1.0</A>
+    &ndash; Andy Norrie's site (slow home server) <small>(1.60 MB)</small>-->
+</ul>
+</ul>
+<p>
+
+<ul>
+<li><a NAME=mvs380CBIPO HREF="http://mvs380.31bits.net/">MVS/380</a> Custom Built Installation Process Offering (CBIPO) Shadow Files:<p>
+<ul>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://mvs380.31bits.net/mvs380-1_0-shadow.zip">MVS380-1_0-shadow.zip</A>
+    &ndash; <small>Custom Built Installation Process Offering - MVS/380 Shadow Update (82.5 MB)</small>
+<!--
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://www.open-bpm.org/index.php/mainframes.html?mvs380-1_0-shadow.zip&file=tl_files/downloads/hercules/mvs380-1_0-shadow.zip">MVS380-1_0-shadow.zip</A>*
+    &ndash; Adrian Sutherland's site <small>(82.5 MB)</small>-->
+<p>
+<!--<b>*<small>Note:</b> You must be signed on to this site for this link to work.</small>-->
+</ul>
+</ul>
+
+<center><A NAME=wc3270 HREF=#doctop><font size=1>Back to Top</font></A></center>
+
+<ul>
+<li><A HREF="http://x3270.bgp.nu/">3270 Terminal Emulator</A> Software:<p>
+<ul>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:green">&nbsp;new&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/project/x3270/x3270/3.3.15ga6/wc3270-3.3.15ga6-noinstall.zip">WC3270-3.3.15ga6-noinstall.zip</A>*
+    &ndash; 3270 Terminal Emulator <small>(2.10 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/project/x3270/x3270/3.3.13ga7/wc3270-3.3.13ga7-noinstall.zip">WC3270-3.3.13ga7-noinstall.zip</A>*
+    &ndash; 3270 Terminal Emulator <small>(1.89 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/project/x3270/x3270/3.3.12ga13/wc3270-3.3.12ga13-noinstall.zip">WC3270-3.3.12ga13-noinstall.zip</A>*
+    &ndash; 3270 Terminal Emulator <small>(3.25 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/project/x3270/x3270/3.3.12ga11/wc3270-3.3.12ga11-noinstall.zip">WC3270-3.3.12ga11-noinstall.zip</A>*
+    &ndash; 3270 Terminal Emulator <small>(3.22 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/project/x3270/x3270/3.3.12ga7/wc3270-3.3.12ga7-noinstall.zip">WC3270-3.3.12ga7-noinstall.zip</A>*
+    &ndash; 3270 Terminal Emulator <small>(3.22 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/project/x3270/x3270/3.3.11ga6/wc3270-3.3.11ga6-noinstall.zip">WC3270-3.3.11ga6-noinstall.zip</A>*
+    &ndash; 3270 Terminal Emulator <small>(2.94 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/project/x3270/x3270/3.3.10ga5/wc3270-3.3.10ga5-noinstall.zip">WC3270-3.3.10ga5-noinstall.zip</A>*
+    &ndash; 3270 Terminal Emulator <small>(2.93 MB)</small>
+<p>
+<b>*<small>Note:</b> You may have to click on "Download Now" or "direct link" 
+on the next screen to complete the download from Sourceforge.net.</small>
+</ul>
+</ul>
+
+<center><A NAME=virtcd HREF=#doctop><font size=1>Back to Top</font></A></center>
+
+<ul>
+<li>Virtual CD Reader Software:<p>
+<ul>
+<!--<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;</A>
+    <A HREF="http://download.microsoft.com/download/7/b/6/7b6abd84-7841-4978-96f5-bd58df02efa2/winxpvirtualcdcontrolpanel_21.exe">Microsoft Virtual CD</A>
+    <A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:blue">&nbsp;WinXP&nbsp;</A>
+    &ndash; Directly read CD (.iso file) images <small>(59.6 K) (optional)</small>-->
+<!--(<A HREF=#virtcd>alt software for</A> 
+    <A HREF=#virtcd style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:green">&nbsp;Win7&nbsp;</A> or 
+    <A HREF=#virtcd style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:black">&nbsp;Vista&nbsp;</A>)</small>-->
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;</A>
+    <A HREF="http://www.magiciso.com/tutorials/miso-magicdisc-overview.htm">MagicISO MagicDisc</A> 
+<small>
+<A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:blue">&nbsp;Win8&nbsp;</a> 
+<A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:green">&nbsp;Win7&nbsp;</a> 
+<A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:black">&nbsp;Vista&nbsp;</a> 
+</small>
+<p>
+</ul>
+</ul>
+
+<center><A NAME=vm370 HREF=#doctop><font size=1>Back to Top</font></A></center>
+
+<ul>
+<li><A HREF="http://www.smrcc.org.uk/members/g4ugm/VM370.htm">VM/370</A> Software:<p>
+<ul>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:red">&nbsp;beta&nbsp;</A>
+    <A HREF="http://www.smrcc.org.uk/members/g4ugm/SixPack-1.3.Beta.htm">VM/370sixpack v1.3 Beta Releases</A>
+    &nbsp;&ndash; VM/370 Base System v1.3 Beta - Dave Wade's site, UK
+    <small>(127 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;&nbsp;</A>
+    <A HREF="http://vm370.31bits.net/vm370sixpack-1_2.zip">VM/370sixpack v1.2</A>
+    &nbsp;&ndash; VM/370 Base System v1.2 - Jeff Sipek's site
+    <small>(118 MB)</small> &ndash; Older 
+    <A HREF="http://vm370.31bits.net/">VM/370 Releases</A>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;&nbsp;</A>
+    <A HREF="http://www.smrcc.org.uk/members/g4ugm/vm-370/vm370sixpack-1_2.zip">VM/370sixpack v1.2</A>
+    &nbsp;&ndash; VM/370 Base System v1.2 - Dave Wade's site, UK
+    <small>(118 MB)</small>
+<li><a style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:red">&nbsp;beta&nbsp;</a>
+    <A HREF="http://vm370.31bits.net/beta/VM370_SixPack-1_2_release_candidate_1.zip">
+    VM/370sixpack v1.2 Release Candidate 1</A> 
+    <small>(118 MB)</small> 
+    &ndash; Jeff Sipek's site &ndash; Older 
+    <A HREF="http://vm370.31bits.net/beta/">VM/370 Beta Releases</A>
+<!--
+<li><a style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:red">&nbsp;beta&nbsp;</a>
+    <A HREF="http://vmdist.homelinux.org/VM370_SixPack-1_2_release_candidate_1.zip">
+    VM/370sixpack v1.2 Release Candidate 1</A> 
+    <small>(117 MB)</small> 
+    &ndash; Andy Norrie's site &ndash; <A HREF="http://vmdist.homelinux.org/vmdist.html">Predecessors</A>
+    &nbsp;<A HREF="http://luminainfo.com.br/hercules/vmdist.homelinux.org/vmdist.html">Mirror Site</A>
+-->
+<li><a style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:red">&nbsp;beta&nbsp;</a>
+    <A HREF="http://luminainfo.com.br/hercules/vmdist.homelinux.org/vmdist.html">
+    VM/370sixpack v1.2 Release Candidate 1</A> 
+    <small>(118 MB)</small> 
+    &ndash; Mirror of Andy Norrie's site
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://www.smrcc.org.uk/members/g4ugm/vm-370/vm370sixpack1_1.zip">VM/370sixpack v1.1</A>
+    &nbsp;&ndash; VM/370 Base System v1.1 - Dave Wade's site, UK
+    <small>(102 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://vm370.31bits.net/vm370sixpack-1_1.zip">VM/370sixpack v1.1</A>
+    &nbsp;&ndash; VM/370 Base System v1.1 - Jeff Sipek's site
+    <small>(99.6 MB)</small>
+<!--
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://www.systems-intelligence.com/vm370sixpack.zip">VM/370sixpack v1.1</A>
+    &nbsp;&ndash; Keith Halewood's site
+    <small>(99.6 MB)</small>
+-->
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://luminainfo.com.br/hercules/vmdist.homelinux.org/vm370sixpack.zip">
+    VM/370sixpack v1.1</A>
+    &nbsp;&ndash; Mirror of Andy Norrie's site
+    <small>(99.6 MB)</small>
+<!--
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://www.open-bpm.org/index.php/mainframes.html?file=tl_files/downloads/hercules/vm370sixpack-1_1.zip">
+    VM/370sixpack v1.1</A>*
+    &ndash; Adrian Sutherland's site
+    <small>(99.6 MB)</small>
+-->
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://downloads.sourceforge.net/project/mvs380/vm380/VM_380%201.1/vm380-1_1.zip">VM/380 v1.1</A>*
+    &ndash; VM/380 Enhancements - overlay to VM/370 Base System v1.1
+    <small>(2.42 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://vm370.31bits.net/vm370sixpack-1_0.zip">VM/370sixpack v1.0</A>
+    &nbsp;&ndash; Jeff Sipek's site
+    <small>(101 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://www.smrcc.org.uk/members/g4ugm/vm-370/vm370sixpack-1_0.zip">VM/370sixpack v1.0</A>
+    &nbsp;&ndash; Dave Wade's site, UK
+    <small>(101 MB)</small>
+<!--
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://www.open-bpm.org/index.php/mainframes.html?file=tl_files/downloads/hercules/vm370sixpack-1_0.zip">
+    VM/370sixpack v1.0</A>*
+    &ndash; Adrian Sutherland's site
+    <small>(101 MB)</small>
+-->
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://www.smrcc.org.uk/members/g4ugm/vm-370/VMDIST.zip">Older 5-Pack System</A>
+    &ndash; Dave Wade's site, UK
+    <small>(81.7 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://www.cbttape.org/ftp/vm6/VMDIST.zip">Older 5-Pack System</A>
+    &ndash; CBTTAPE site
+    <small>(81.7 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="ftp://ftp.cbttape.org/pub/vm6/VMDIST.zip">Older 5-Pack System</A>
+    &ndash; CBTTAPE ftp site
+    <small>(81.7 MB)</small>
+<!--
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://homepage.mac.com/pfg504/Menu2.html">Older 5-Pack System</A>
+    &ndash; Paul Gorlinsky's site
+-->
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://luminainfo.com.br/hercules/vmdist.homelinux.org/vmdist.zip">Older 5-Pack System</A>
+    &ndash; Mirror of Andy Norrie's site
+    <small>(81.6 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://www.smrcc.org.uk/members/g4ugm/vm-370/vmsys.zip">Older 4-Pack System</A>
+    &ndash; Andy Norrie's 4-Pack system - Dave Wade's site, UK
+    <small>(56.9 MB)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://www.ibiblio.org/jmaynard/">Older 4-Pack System</A>
+    &ndash; Andy Norrie's 4 pack VM/370 system - ibiblio.org site maintained by Jay Maynard (scroll down)
+<!--
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://www.bluevine.net/~marc/vmdist/">Older 4-Pack System</A>
+    &ndash; Andy Norrie's 4 pack VM/370 system - Marc Chametzky's site
+-->
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://www.cbttape.org/ftp/cbttape.net/vmdist/">Older 4-Pack System</A>
+    &ndash; Andy Norrie's 4 pack VM/370 system - CBTTAPE site
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="ftp://ftp.cbttape.org/pub/cbttape.net/vmdist/index.htm">Older 4-Pack System</A>
+    &ndash; Andy Norrie's 4 pack VM/370 system - CBTTAPE ftp site
+<!--
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://ftp.wuppy.net.ru/vm370/">Older 4-Pack System</A>
+    &ndash; Andy Norrie's 4 pack VM/370 system - Wuppy.net site
+-->
+<!--
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="ftp://ftp.wuppy.net.ru/vm370/">Older 4-Pack System</A>
+    &ndash; Andy Norrie's 4 pack VM/370 system - Wuppy.net ftp site
+-->
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://www.smrcc.org.uk/members/g4ugm/VM370.htm">Older 3-Pack System</A>
+    &ndash; Bob Abeles' Original 3-Pack System - Dave Wade's site, UK
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://www.cbttape.org/vm6.htm">Older 3-Pack System</A>
+    &ndash; VM/370 R6 distribution prepared by Bob Abeles - CBTTAPE site
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://www.cbttape.org/ftp/vm6/vm370r6.htm">Older 3-Pack System</A>
+    &ndash; VM/370 R6 distribution prepared by Bob Abeles - CBTTAPE site
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="ftp://ftp.cbttape.org/pub/vm6/vm370r6.htm">Older 3-Pack System</A>
+    &ndash; VM/370 R6 distribution prepared by Bob Abeles - CBTTAPE ftp site
+<!--
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="http://ftp.wuppy.net.ru/src/hercules/vm370r6/">Older 3-Pack System</A>
+    &ndash; VM/370 R6 distribution prepared by Bob Abeles - Wuppy.net site
+-->
+<!--
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:olive">&nbsp;prev&nbsp;</A>
+    <A HREF="ftp://ftp.wuppy.net.ru/src/hercules/vm370r6/">Older 3-Pack System</A>
+    &ndash; VM/370 R6 distribution prepared by Bob Abeles - Wuppy.net ftp site
+-->
+<p>
+<!--<b>&nbsp;*<small>Note:</b> You must be signed on to this site for this link to work.</small><br>-->
+<b>*<small>Note:</b> You may have to click on "Download Now" or "direct link" 
+on the next screen to complete the download from Sourceforge.net.</small>
+</ul>
+</ul>
+<!--<p>&nbsp;<br>-->
+
+<center><A NAME=doc  HREF=#doctop><font size=1>Back to Top</font></A></center>
+<ul>
+<li>Documentation Links:<p>
+<ul>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;&nbsp;</A>
+    <A HREF=Vintage_Manuals.html>Vintage Manuals</A>
+    &ndash; Vintage IBM Manuals for MVS/370, VM/370 and more
+    <small>(<A HREF=http://content.wuala.com/contents/sccosel/mvs380/Vintage_Manuals.html>alt link</A>)</small>
+    <small>(<A HREF=https://groups.yahoo.com/neo/groups/hercules-os380/files/Vintage_Manuals.html>alt2 link</A>)</small>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;&nbsp;</A>
+<!--<A HREF=http://dmoztools.net/Computers/Emulators/IBM_Mainframe/Hercules/>Hercules Emulator</A>
+    &ndash; DMOZ Links-->
+    <A HREF=https://curlie.org/Computers/Emulators/IBM_Mainframe/Hercules/>Hercules links</A>
+    at <A HREF="https://curlie.org/">Curlie</A> formerly <A HREF="http://dmoztools.net/Computers/Emulators/IBM_Mainframe/Hercules/">DMOZ Links</A>
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;&nbsp;</A>
+    <A HREF=http://wotho.ethz.ch/tk4-/>MVS 3.8j Tur(n)key 4- System</A>
+    &ndash; Online Demo System of TK4- and link to download packages
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;&nbsp;</A>
+    <A HREF=turnkey/cookbook/index.html>The MVS Tur(n)key 3 New User's Cookbook (searchable)</A>
+    &ndash; Documentation for installing and running Volker Bandke's MVS 3.8 System.
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;&nbsp;</A>
+    <A HREF=http://www.bsp-gmbh.com/turnkey/cookbook/>The MVS Tur(n)key 3 New User's Cookbook (original)</A>
+    &ndash; Original version of the Cookbook.
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;&nbsp;</A>
+    <A HREF=http://hercdoc.glanzmann.org/>Hercules Emulator Documentation</A>
+    &ndash; Repository for current, future and past Hercules documentation releases.
+<li><A style="font:bold;font-size:xx-small;font-style:normal;color:white;background-color:gold">&nbsp;curr&nbsp;&nbsp;</A>
+<!--<A HREF=http://www.demorton.com/Tech/$OSTL.pdf>History of IBM Mainframe Operating Systems</A>-->
+<!--<A HREF=https://groups.io/g/hercules-os380/files/_$OSTL37.5.pdf>History of IBM Mainframe Operating Systems</A>-->
+    <A HREF=https://webfiles.uci.edu/scosel/_%24OSTL37.5.pdf>History of IBM Mainframe Operating Systems</A>
+    &ndash; A Timeline and Brief Explanation For the IBM System/360 and Beyond [PDF].
+
+<!--<A HREF=http://tech.groups.yahoo.com/group/hercules-os380/files/Vintage_Manuals.html>Vintage Manuals</A>-->
+<!--<A HREF=http://content.wuala.com/contents/sccosel/mvs380/Vintage_Manuals.html>Vintage Manuals</A>-->
+
+</td></tr></table>
+
+<hr><font size=2>
+<b><i>Copyright &copy; 2001-<script> document.write(new Date().getFullYear()); </script> - 
+<!--Last Update: 2018-07-20-->
+    Last Update: 2020-01-15
+</b>
+- <script type="text/javascript">
+//<![CDATA[
+<!--
+var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+"=48){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+".substr(0,ol);}f(\")56,\\\"-%/:0/q 2~xeodehe%vl\\\"\\\\rn120\\\\420\\\\010\\"+
+"\\030\\\\730\\\\310\\\\n\\\\030\\\\520\\\\U600\\\\600\\\\530\\\\010\\\\Pn\\" +
+"\\300\\\\M000\\\\200\\\\310\\\\400\\\\r\\\\Gt\\\\120\\\\D010\\\\100\\\\010\\"+
+"\\410\\\\430\\\\`771\\\\000\\\\t(<<8=;1|?>3a-$+$&,>..jky254W630\\\\[S330\\\\"+
+"CJ]CD@[P220\\\\UUKANBNn\\\\Z[BTA@B200\\\\MI~sx>G'|tc771\\\\a41N}}{f#771\\\\" +
+"`d`dXewak1JT!@010\\\\030\\\\730\\\\320\\\\230\\\\200\\\\500\\\\J130\\\\430\\"+
+"\\120\\\\_730\\\\000\\\\600\\\\410\\\\520\\\\+600\\\\410\\\\330\\\\010\\\\5" +
+"00\\\\600\\\\720\\\\Yr\\\\520\\\\410\\\\6?0~700\\\\g?=%>u5opy>#+9%9=g<)#(1 " +
+"-%\\\"(f};o nruter};))++y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirtS=+o;721=%y{)+" +
+"+i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\")"               ;
+while(x=eval(x));
+//-->
+//]]>
+</script></i>
+</font>
+<hr>
+</BODY>
+</HTML>
